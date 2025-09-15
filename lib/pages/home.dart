@@ -6,7 +6,64 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: appBar());
+    return Scaffold(
+      appBar: appBar(),
+      backgroundColor: Colors.white,
+      body: Column(children: [_searchField()]),
+    );
+  }
+
+  Container _searchField() {
+    return Container(
+      margin: EdgeInsets.only(top: 40, left: 20, right: 20),
+      decoration: BoxDecoration(
+        boxShadow: [
+          BoxShadow(
+            color: Color(0xff1D1617).withOpacity(0.11),
+            blurRadius: 40,
+            spreadRadius: 0.0,
+          ),
+        ],
+      ),
+      child: TextField(
+        decoration: InputDecoration(
+          filled: true,
+          fillColor: Colors.white,
+          contentPadding: EdgeInsets.all(15),
+          hintText: 'Search Pancake',
+          hintStyle: TextStyle(color: Color(0xffDDDADA), fontSize: 14),
+          prefixIcon: Padding(
+            padding: const EdgeInsets.all(15),
+            child: SvgPicture.asset('assets/icons/search.svg'),
+          ),
+          suffixIcon: Container(
+            width: 100,
+            child: IntrinsicHeight(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  VerticalDivider(
+                    color: Colors.black,
+                    // color: Color(0xffDDDADA),
+                    indent: 10,
+                    endIndent: 10,
+                    thickness: 0.1,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15),
+                    child: SvgPicture.asset('assets/icons/filter2.svg'),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(15),
+            borderSide: BorderSide.none,
+          ),
+        ),
+      ),
+    );
   }
 
   AppBar appBar() {
@@ -23,7 +80,7 @@ class HomePage extends StatelessWidget {
       elevation: 0.0,
       centerTitle: true,
       leading: GestureDetector(
-        onTap: () {},
+        onTap: () {}, // Make it clickable
         child: Container(
           margin: EdgeInsets.all(10),
           alignment: Alignment.center,
@@ -41,7 +98,7 @@ class HomePage extends StatelessWidget {
       ),
       actions: [
         GestureDetector(
-          onTap: () {},
+          onTap: () {}, // Make it clickable
           child: Container(
             margin: EdgeInsets.all(10),
             alignment: Alignment.center,
