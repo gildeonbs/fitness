@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'NotoSansNerdFont'),
-      home: const HomePage(),
+      home: HomePage(),
     );
   }
 }
