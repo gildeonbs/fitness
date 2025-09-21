@@ -33,7 +33,7 @@ class CategoryModel {
     categories.add(
       CategoryModel(
         name: 'Pie',
-        iconPath: 'assets/icons/pie2.svg',
+        iconPath: 'assets/icons/pie.svg',
         boxColor: Color(0xff92A3FD),
       ),
     );
