@@ -64,7 +64,29 @@ Make sure you have the Flutter SDK installed on your machine.
     ```sh
     flutter pub get
     ```
-4.  **Run the app**
+
+## ▶️ Running the Application
+
+1.  **Check for available emulators**
+
+    This command lists all the emulators you have set up.
+    ```sh
+    flutter emulators
+    ```
+2.  **Launch an emulator**
+
+    Choose an emulator from the list and launch it using its ID.
+    ```sh
+    # Replace <emulator_id> with the ID from the previous step
+    flutter emulators --launch <emulator_id>
+    ```
+    **_Example:_**
+    ```sh
+    flutter emulators --launch Medium_Phone_API_36.1
+    ```
+3.  **Run the app**
+
+    Once the emulator is running, execute the following command:
     ```sh
     flutter run
     ```
