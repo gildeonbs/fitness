@@ -41,7 +41,7 @@ class DietModel {
         level: 'Easy',
         duration: '60mins',
         calories: '360kCal',
-        viewIsSelected: false,
+        viewIsSelected: true,
         boxColor: Color(0xffC58BF2),
       ),
     );
