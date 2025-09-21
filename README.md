@@ -4,7 +4,8 @@ A clean and modern user interface for a breakfast-themed recipe application, bui
 
 ## 📸 Screenshot
 
-\*\*
+<img width="270" height="600" alt="Screenshot_1758458505" src="https://github.com/user-attachments/assets/36aa08ce-f971-4736-9550-a65465bd73b4" />
+
 
 -----
 
